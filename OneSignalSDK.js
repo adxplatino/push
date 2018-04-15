@@ -9410,16 +9410,7 @@
                             case 0:
                                 return null !== this.notificationIcons ? [3, 2] : [4, c.default.getNotificationIcons()];
                             case 1:
-                                t = r.sent(), this.notificationIcons = t, this.container && l.removeDomElement(
-                                        "#onesignal-popover-container"), n = this.getPlatformNotificationIcon(), i =
-                                    '<div id="normal-popover"> <div class="popover-body"><div class="popover-body-message">' + this.options.actionMessage + <button id="onesignal-popover-allow-button" class="align-right primary popover-button">' + this.options.acceptButtonText + '</button></div><div class="clearfix"></div> </div></div></div></div>',l.addDomElement(
-                                        "body", "beforeend",
-                                        '<div id="onesignal-popover-container" class="onesignal-popover-container onesignal-reset"></div>'
-                                    ), l.addDomElement(this.container, "beforeend",
-                                        '<div id="onesignal-popover-dialog" class="onesignal-popover-dialog">' + i + "</div>"), l.addCssClass(
-                                        this.container, a.default.mobile ? "slide-up" : "slide-down"), this.allowButton.addEventListener(
-                                        "click", this.onPopoverAllowed.bind(this)), this.cancelButton.addEventListener("click",
-                                        this.onPopoverCanceled.bind(this)), u.default.trigger(e.EVENTS.SHOWN), r.label = 2;
+                               
                             case 2:
                                 return [2]
                         }
